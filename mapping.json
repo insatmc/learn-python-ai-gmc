@@ -52,17 +52,14 @@
       ],
       "Modules":[
          {
-            "Id":1,
             "Name":"Kickstart",
             "Color":"#1abc9c"
          },
          {
-            "Id":2,
             "Name":"Power Up",
             "Color":"#2ecc71"
          },
          {
-            "Id":3,
             "Name":"Launch",
             "Color":"#3498db"
          }
