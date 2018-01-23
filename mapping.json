@@ -18,43 +18,36 @@
                 "Path":"0.python/0.1.intro.md",
                 "SandboxUrl":"https://repl.it/@mokhleselheni/HelloPython?lite=true"
              }, {
-                 "Id":312,
                  "Name":"Variables",
                  "Path":"0.python/0.2.variables.md",
                  "SandboxUrl":""
               },
               {
-                 "Id":313,
                  "Name":"Conditions",
                  "Path":"0.python/0.3.conditions.md",
                  "SandboxUrl":""
               },
               {
-                 "Id":314,
                  "Name":"Looping",
                  "Path":"0.python/0.4.looping.md",
                  "SandboxUrl":"https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true"
               },
               {
-                 "Id":315,
                  "Name":"Lists",
                  "Path":"0.python/0.5.lists.md",
                  "SandboxUrl":""
               },
               {
-                 "Id":316,
                  "Name":"Dicts",
                  "Path":"0.python/0.6.dicts.md",
                  "SandboxUrl":"https://repl.it/@mokhleselheni/DictFrToEn?lite=true"
               },
               {
-                 "Id":317,
                  "Name":"Function and Classes",
                  "Path":"0.python/0.7.func_oop.md",
                  "SandboxUrl":"https://repl.it/@mokhleselheni/Student?lite=true"
               },
               {
-                 "Id":318,
                  "Name":"Mini Project",
                  "Path":"0.python/0.8.project.md",
                  "SandboxUrl":"https://repl.it/@mokhleselheni/HelloPython?lite=true"
@@ -244,5 +237,5 @@
       "arsslens021@gmail.com",
       "elhenimokhles@gmail.com"
    ],
-   "MigrationVersion":4
+   "MigrationVersion":5
 }
