@@ -67,7 +67,7 @@
                },
                {
                   "Name":"Indexing",
-                  "Path":"1.numpy/1.4.Indexing.md",
+                  "Path":"1.numpy/1.4.indexing.md",
                   "SandboxUrl":""
                }
             ]
@@ -90,7 +90,7 @@
    },
    "Backup":true,
    "BackupOldMap":true,
-   "MigrationVersion":5,
+   "MigrationVersion":6,
    "Emails": [
      "arsslens021@gmail.com", "elhenimokhles@gmail.com"
    ]
