@@ -10,10 +10,14 @@
             "Id":63,
             "Name":"Python",
             "SandboxUrl":"",
-            "Path":"0.python/0.1.intro.md",
+            "Path":"empty.md",
             "Module":"Kickstart",
             "Slides":[
-               {
+              {
+                 "Name":"Hello Python",
+                 "Path":"0.python/0.1.intro.md",
+                 "SandboxUrl":"https://repl.it/@mokhleselheni/HelloPython?lite=true"
+              }, {
                   "Id":312,
                   "Name":"Variables",
                   "Path":"0.python/0.2.variables.md",
@@ -41,19 +45,19 @@
                   "Id":316,
                   "Name":"Dicts",
                   "Path":"0.python/0.6.dicts.md",
-                  "SandboxUrl":""
+                  "SandboxUrl":"https://repl.it/@mokhleselheni/DictFrToEn?lite=true"
                },
                {
                   "Id":317,
                   "Name":"Function and Classes",
                   "Path":"0.python/0.7.func_oop.md",
-                  "SandboxUrl":""
+                  "SandboxUrl":"https://repl.it/@mokhleselheni/Student?lite=true"
                },
                {
                   "Id":318,
                   "Name":"Mini Project",
                   "Path":"0.python/0.8.project.md",
-                  "SandboxUrl":""
+                  "SandboxUrl":"https://repl.it/@mokhleselheni/HelloPython?lite=true"
                }
             ],
             "Quizzes":[
