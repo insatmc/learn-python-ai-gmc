@@ -90,5 +90,8 @@
    },
    "Backup":true,
    "BackupOldMap":true,
-   "MigrationVersion":2
+   "MigrationVersion":5,
+   "Emails": [
+     "arsslens021@gmail.com", "elhenimokhles@gmail.com"
+   ]
 }
