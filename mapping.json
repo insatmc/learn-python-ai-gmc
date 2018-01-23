@@ -58,7 +58,7 @@
                {
                   "Name": "Arrays",
                   "Path":"1.numpy/1.2.arrays.md",
-                  "SandboxUrl":""
+                  "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
                },
                {
                   "Name":"Math",
@@ -68,7 +68,7 @@
                {
                   "Name":"Indexing",
                   "Path":"1.numpy/1.4.indexing.md",
-                  "SandboxUrl":""
+                  "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
                }
             ]
          }
