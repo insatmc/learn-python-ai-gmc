@@ -7,103 +7,82 @@
       "Strategy":0,
       "Lessons":[
          {
-            "Id":63,
             "Name":"Python",
             "SandboxUrl":"",
             "Path":"0.python/0.1.intro.md",
             "Module":"Kickstart",
             "Slides":[
                {
-                  "Id":312,
-                  "Name":"Variables",
+                  "Name": "Variables",
                   "Path":"0.python/0.2.variables.md",
                   "SandboxUrl":""
                },
                {
-                  "Id":313,
                   "Name":"Conditions",
                   "Path":"0.python/0.3.conditions.md",
                   "SandboxUrl":""
                },
                {
-                  "Id":314,
                   "Name":"Looping",
                   "Path":"0.python/0.4.looping.md",
                   "SandboxUrl":"https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true"
                },
                {
-                  "Id":315,
                   "Name":"Lists",
                   "Path":"0.python/0.5.lists.md",
                   "SandboxUrl":""
                },
                {
-                  "Id":316,
                   "Name":"Dicts",
                   "Path":"0.python/0.6.dicts.md",
                   "SandboxUrl":""
                },
                {
-                  "Id":317,
                   "Name":"Function and Classes",
                   "Path":"0.python/0.7.func_oop.md",
                   "SandboxUrl":""
                },
                {
-                  "Id":318,
                   "Name":"Mini Project",
                   "Path":"0.python/0.8.project.md",
                   "SandboxUrl":""
                }
-            ],
-            "Quizzes":[
-
             ]
          },
          {
-            "Id":64,
             "Name":"Numpy",
             "SandboxUrl":"",
             "Path":"1.numpy/1.1.numpy.md",
             "Module":"Kickstart",
             "Slides":[
                {
-                  "Id":319,
-                  "Name":"Arrays",
+                  "Name": "Arrays",
                   "Path":"1.numpy/1.2.arrays.md",
-                  "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
+                  "SandboxUrl":""
                },
                {
-                  "Id":320,
                   "Name":"Math",
                   "Path":"1.numpy/1.3.math.md",
                   "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
                },
                {
-                  "Id":321,
                   "Name":"Indexing",
                   "Path":"1.numpy/1.4.indexing.md",
-                  "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
+                  "SandboxUrl":""
                }
-            ],
-            "Quizzes":[
-
             ]
          }
       ],
       "Modules":[
          {
-            "Id":27,
             "Name":"Kickstart",
             "Color":"#1abc9c"
          },
          {
-            "Id":28,
             "Name":"Power Up",
             "Color":"#2ecc71"
          },
          {
-            "Id":29,
             "Name":"Launch",
             "Color":"#3498db"
          }
@@ -111,9 +90,8 @@
    },
    "Backup":true,
    "BackupOldMap":true,
-   "Emails":[
-      "arsslens021@gmail.com",
-      "elhenimokhles@gmail.com"
-   ],
-   "MigrationVersion":2
+   "MigrationVersion":6,
+   "Emails": [
+     "arsslens021@gmail.com", "elhenimokhles@gmail.com"
+   ]
 }
