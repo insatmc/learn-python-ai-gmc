@@ -1,0 +1,72 @@
+{
+   "SupportedContentExtensions":[
+      ".md"
+   ],
+   "Import":{
+      "SubTrackId":10,
+      "Strategy":0,
+      "Lessons":[
+         {
+            "Name":"Python",
+            "SandboxUrl":"",
+            "Path":"0.python/0.1.intro.md",
+            "Module":"Kickstart",
+            "Slides":[
+               {
+                  "Name": "Variables",
+                  "Path":"0.python/0.2.variables.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"Conditions",
+                  "Path":"0.python/0.3.conditions.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"Looping",
+                  "Path":"0.python/0.4.looping.md",
+                  "SandboxUrl":"https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true"
+               },
+               {
+                  "Name":"Lists",
+                  "Path":"0.python/0.5.lists.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"Dicts",
+                  "Path":"0.python/0.6.dicts.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"Function and Classes",
+                  "Path":"0.python/0.7.func_oop.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"Mini Project",
+                  "Path":"0.python/0.8.project.md",
+                  "SandboxUrl":""
+               }
+            ]
+         }
+      ],
+      "Modules":[
+         {
+            "Name":"Kickstart",
+            "Color":"#1abc9c"
+         },
+         {
+            "Name":"Power Up",
+            "Color":"#2ecc71"
+         },
+         {
+            "Name":"Launch",
+            "Color":"#3498db"
+         }
+      ]
+   },
+   "Backup":true,
+   "BackupOldMap":true,
+   "MigrationVersion":3 ,
+   "Emails": [ "arsslens021@gmail.com" ]
+}
