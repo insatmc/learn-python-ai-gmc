@@ -1,0 +1,1235 @@
+{
+  "Lessons": [
+    {
+      "ModuleId": 17,
+      "Module": {
+        "SubTrackId": 10,
+        "SubTrack": {
+          "Level": 1,
+          "TrackId": 4,
+          "Track": null,
+          "Name": "Ready",
+          "Modules": [
+            {
+              "SubTrackId": 10,
+              "Name": "Power Up",
+              "Color": "#2ecc71",
+              "OrderIndicator": 3,
+              "Lessons": [],
+              "Id": 18
+            },
+            {
+              "SubTrackId": 10,
+              "Name": "Launch",
+              "Color": "#3498db",
+              "OrderIndicator": 6,
+              "Lessons": [],
+              "Id": 19
+            }
+          ],
+          "MigrationVersion": 1,
+          "ProductTemplateId": 18,
+          "Locked": false,
+          "Id": 10
+        },
+        "Name": "Kickstart",
+        "Color": "#1abc9c",
+        "OrderIndicator": 0,
+        "Lessons": [],
+        "Id": 17
+      },
+      "Name": "Python",
+      "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 0,
+      "Slides": [
+        {
+          "LessonId": 40,
+          "Name": "Variables",
+          "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 0,
+          "IsRead": null,
+          "Id": 214
+        },
+        {
+          "LessonId": 40,
+          "Name": "Conditions",
+          "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 3,
+          "IsRead": null,
+          "Id": 215
+        },
+        {
+          "LessonId": 40,
+          "Name": "Looping",
+          "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+          "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+          "OrderIndicator": 6,
+          "IsRead": null,
+          "Id": 216
+        },
+        {
+          "LessonId": 40,
+          "Name": "Lists",
+          "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 9,
+          "IsRead": null,
+          "Id": 217
+        },
+        {
+          "LessonId": 40,
+          "Name": "Dicts",
+          "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 12,
+          "IsRead": null,
+          "Id": 218
+        },
+        {
+          "LessonId": 40,
+          "Name": "Function and Classes",
+          "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 15,
+          "IsRead": null,
+          "Id": 219
+        },
+        {
+          "LessonId": 40,
+          "Name": "Mini Project",
+          "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 18,
+          "IsRead": null,
+          "Id": 220
+        }
+      ],
+      "Quizzes": null,
+      "Progress": 0.0,
+      "Id": 40
+    }
+  ],
+  "Slides": [
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Conditions",
+            "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 3,
+            "IsRead": null,
+            "Id": 215
+          },
+          {
+            "LessonId": 40,
+            "Name": "Looping",
+            "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+            "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+            "OrderIndicator": 6,
+            "IsRead": null,
+            "Id": 216
+          },
+          {
+            "LessonId": 40,
+            "Name": "Lists",
+            "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 9,
+            "IsRead": null,
+            "Id": 217
+          },
+          {
+            "LessonId": 40,
+            "Name": "Dicts",
+            "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 12,
+            "IsRead": null,
+            "Id": 218
+          },
+          {
+            "LessonId": 40,
+            "Name": "Function and Classes",
+            "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 15,
+            "IsRead": null,
+            "Id": 219
+          },
+          {
+            "LessonId": 40,
+            "Name": "Mini Project",
+            "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 18,
+            "IsRead": null,
+            "Id": 220
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Variables",
+      "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 0,
+      "IsRead": null,
+      "Id": 214
+    },
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Variables",
+            "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 0,
+            "IsRead": null,
+            "Id": 214
+          },
+          {
+            "LessonId": 40,
+            "Name": "Looping",
+            "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+            "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+            "OrderIndicator": 6,
+            "IsRead": null,
+            "Id": 216
+          },
+          {
+            "LessonId": 40,
+            "Name": "Lists",
+            "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 9,
+            "IsRead": null,
+            "Id": 217
+          },
+          {
+            "LessonId": 40,
+            "Name": "Dicts",
+            "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 12,
+            "IsRead": null,
+            "Id": 218
+          },
+          {
+            "LessonId": 40,
+            "Name": "Function and Classes",
+            "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 15,
+            "IsRead": null,
+            "Id": 219
+          },
+          {
+            "LessonId": 40,
+            "Name": "Mini Project",
+            "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 18,
+            "IsRead": null,
+            "Id": 220
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Conditions",
+      "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 3,
+      "IsRead": null,
+      "Id": 215
+    },
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Variables",
+            "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 0,
+            "IsRead": null,
+            "Id": 214
+          },
+          {
+            "LessonId": 40,
+            "Name": "Conditions",
+            "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 3,
+            "IsRead": null,
+            "Id": 215
+          },
+          {
+            "LessonId": 40,
+            "Name": "Lists",
+            "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 9,
+            "IsRead": null,
+            "Id": 217
+          },
+          {
+            "LessonId": 40,
+            "Name": "Dicts",
+            "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 12,
+            "IsRead": null,
+            "Id": 218
+          },
+          {
+            "LessonId": 40,
+            "Name": "Function and Classes",
+            "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 15,
+            "IsRead": null,
+            "Id": 219
+          },
+          {
+            "LessonId": 40,
+            "Name": "Mini Project",
+            "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 18,
+            "IsRead": null,
+            "Id": 220
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Looping",
+      "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+      "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+      "OrderIndicator": 6,
+      "IsRead": null,
+      "Id": 216
+    },
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Variables",
+            "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 0,
+            "IsRead": null,
+            "Id": 214
+          },
+          {
+            "LessonId": 40,
+            "Name": "Conditions",
+            "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 3,
+            "IsRead": null,
+            "Id": 215
+          },
+          {
+            "LessonId": 40,
+            "Name": "Looping",
+            "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+            "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+            "OrderIndicator": 6,
+            "IsRead": null,
+            "Id": 216
+          },
+          {
+            "LessonId": 40,
+            "Name": "Dicts",
+            "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 12,
+            "IsRead": null,
+            "Id": 218
+          },
+          {
+            "LessonId": 40,
+            "Name": "Function and Classes",
+            "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 15,
+            "IsRead": null,
+            "Id": 219
+          },
+          {
+            "LessonId": 40,
+            "Name": "Mini Project",
+            "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 18,
+            "IsRead": null,
+            "Id": 220
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Lists",
+      "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 9,
+      "IsRead": null,
+      "Id": 217
+    },
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Variables",
+            "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 0,
+            "IsRead": null,
+            "Id": 214
+          },
+          {
+            "LessonId": 40,
+            "Name": "Conditions",
+            "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 3,
+            "IsRead": null,
+            "Id": 215
+          },
+          {
+            "LessonId": 40,
+            "Name": "Looping",
+            "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+            "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+            "OrderIndicator": 6,
+            "IsRead": null,
+            "Id": 216
+          },
+          {
+            "LessonId": 40,
+            "Name": "Lists",
+            "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 9,
+            "IsRead": null,
+            "Id": 217
+          },
+          {
+            "LessonId": 40,
+            "Name": "Function and Classes",
+            "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 15,
+            "IsRead": null,
+            "Id": 219
+          },
+          {
+            "LessonId": 40,
+            "Name": "Mini Project",
+            "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 18,
+            "IsRead": null,
+            "Id": 220
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Dicts",
+      "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 12,
+      "IsRead": null,
+      "Id": 218
+    },
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Variables",
+            "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 0,
+            "IsRead": null,
+            "Id": 214
+          },
+          {
+            "LessonId": 40,
+            "Name": "Conditions",
+            "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 3,
+            "IsRead": null,
+            "Id": 215
+          },
+          {
+            "LessonId": 40,
+            "Name": "Looping",
+            "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+            "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+            "OrderIndicator": 6,
+            "IsRead": null,
+            "Id": 216
+          },
+          {
+            "LessonId": 40,
+            "Name": "Lists",
+            "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 9,
+            "IsRead": null,
+            "Id": 217
+          },
+          {
+            "LessonId": 40,
+            "Name": "Dicts",
+            "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 12,
+            "IsRead": null,
+            "Id": 218
+          },
+          {
+            "LessonId": 40,
+            "Name": "Mini Project",
+            "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 18,
+            "IsRead": null,
+            "Id": 220
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Function and Classes",
+      "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 15,
+      "IsRead": null,
+      "Id": 219
+    },
+    {
+      "LessonId": 40,
+      "Lesson": {
+        "ModuleId": 17,
+        "Module": {
+          "SubTrackId": 10,
+          "SubTrack": {
+            "Level": 1,
+            "TrackId": 4,
+            "Track": null,
+            "Name": "Ready",
+            "Modules": [
+              {
+                "SubTrackId": 10,
+                "Name": "Power Up",
+                "Color": "#2ecc71",
+                "OrderIndicator": 3,
+                "Lessons": [],
+                "Id": 18
+              },
+              {
+                "SubTrackId": 10,
+                "Name": "Launch",
+                "Color": "#3498db",
+                "OrderIndicator": 6,
+                "Lessons": [],
+                "Id": 19
+              }
+            ],
+            "MigrationVersion": 1,
+            "ProductTemplateId": 18,
+            "Locked": false,
+            "Id": 10
+          },
+          "Name": "Kickstart",
+          "Color": "#1abc9c",
+          "OrderIndicator": 0,
+          "Lessons": [],
+          "Id": 17
+        },
+        "Name": "Python",
+        "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+        "SandboxUrl": "",
+        "OrderIndicator": 0,
+        "Slides": [
+          {
+            "LessonId": 40,
+            "Name": "Variables",
+            "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 0,
+            "IsRead": null,
+            "Id": 214
+          },
+          {
+            "LessonId": 40,
+            "Name": "Conditions",
+            "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 3,
+            "IsRead": null,
+            "Id": 215
+          },
+          {
+            "LessonId": 40,
+            "Name": "Looping",
+            "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+            "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+            "OrderIndicator": 6,
+            "IsRead": null,
+            "Id": 216
+          },
+          {
+            "LessonId": 40,
+            "Name": "Lists",
+            "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 9,
+            "IsRead": null,
+            "Id": 217
+          },
+          {
+            "LessonId": 40,
+            "Name": "Dicts",
+            "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 12,
+            "IsRead": null,
+            "Id": 218
+          },
+          {
+            "LessonId": 40,
+            "Name": "Function and Classes",
+            "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+            "SandboxUrl": "",
+            "OrderIndicator": 15,
+            "IsRead": null,
+            "Id": 219
+          }
+        ],
+        "Quizzes": null,
+        "Progress": 0.0,
+        "Id": 40
+      },
+      "Name": "Mini Project",
+      "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+      "SandboxUrl": "",
+      "OrderIndicator": 18,
+      "IsRead": null,
+      "Id": 220
+    }
+  ],
+  "Modules": [
+    {
+      "SubTrackId": 10,
+      "SubTrack": {
+        "Level": 1,
+        "TrackId": 4,
+        "Track": null,
+        "Name": "Ready",
+        "Modules": [
+          {
+            "SubTrackId": 10,
+            "Name": "Power Up",
+            "Color": "#2ecc71",
+            "OrderIndicator": 3,
+            "Lessons": [],
+            "Id": 18
+          },
+          {
+            "SubTrackId": 10,
+            "Name": "Launch",
+            "Color": "#3498db",
+            "OrderIndicator": 6,
+            "Lessons": [],
+            "Id": 19
+          }
+        ],
+        "MigrationVersion": 1,
+        "ProductTemplateId": 18,
+        "Locked": false,
+        "Id": 10
+      },
+      "Name": "Kickstart",
+      "Color": "#1abc9c",
+      "OrderIndicator": 0,
+      "Lessons": [
+        {
+          "ModuleId": 17,
+          "Name": "Python",
+          "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+          "SandboxUrl": "",
+          "OrderIndicator": 0,
+          "Slides": [
+            {
+              "LessonId": 40,
+              "Name": "Variables",
+              "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+              "SandboxUrl": "",
+              "OrderIndicator": 0,
+              "IsRead": null,
+              "Id": 214
+            },
+            {
+              "LessonId": 40,
+              "Name": "Conditions",
+              "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+              "SandboxUrl": "",
+              "OrderIndicator": 3,
+              "IsRead": null,
+              "Id": 215
+            },
+            {
+              "LessonId": 40,
+              "Name": "Looping",
+              "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+              "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+              "OrderIndicator": 6,
+              "IsRead": null,
+              "Id": 216
+            },
+            {
+              "LessonId": 40,
+              "Name": "Lists",
+              "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+              "SandboxUrl": "",
+              "OrderIndicator": 9,
+              "IsRead": null,
+              "Id": 217
+            },
+            {
+              "LessonId": 40,
+              "Name": "Dicts",
+              "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+              "SandboxUrl": "",
+              "OrderIndicator": 12,
+              "IsRead": null,
+              "Id": 218
+            },
+            {
+              "LessonId": 40,
+              "Name": "Function and Classes",
+              "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+              "SandboxUrl": "",
+              "OrderIndicator": 15,
+              "IsRead": null,
+              "Id": 219
+            },
+            {
+              "LessonId": 40,
+              "Name": "Mini Project",
+              "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+              "SandboxUrl": "",
+              "OrderIndicator": 18,
+              "IsRead": null,
+              "Id": 220
+            }
+          ],
+          "Quizzes": null,
+          "Progress": 0.0,
+          "Id": 40
+        }
+      ],
+      "Id": 17
+    },
+    {
+      "SubTrackId": 10,
+      "SubTrack": {
+        "Level": 1,
+        "TrackId": 4,
+        "Track": null,
+        "Name": "Ready",
+        "Modules": [
+          {
+            "SubTrackId": 10,
+            "Name": "Kickstart",
+            "Color": "#1abc9c",
+            "OrderIndicator": 0,
+            "Lessons": [
+              {
+                "ModuleId": 17,
+                "Name": "Python",
+                "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+                "SandboxUrl": "",
+                "OrderIndicator": 0,
+                "Slides": [
+                  {
+                    "LessonId": 40,
+                    "Name": "Variables",
+                    "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 0,
+                    "IsRead": null,
+                    "Id": 214
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Conditions",
+                    "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 3,
+                    "IsRead": null,
+                    "Id": 215
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Looping",
+                    "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+                    "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+                    "OrderIndicator": 6,
+                    "IsRead": null,
+                    "Id": 216
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Lists",
+                    "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 9,
+                    "IsRead": null,
+                    "Id": 217
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Dicts",
+                    "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 12,
+                    "IsRead": null,
+                    "Id": 218
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Function and Classes",
+                    "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 15,
+                    "IsRead": null,
+                    "Id": 219
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Mini Project",
+                    "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 18,
+                    "IsRead": null,
+                    "Id": 220
+                  }
+                ],
+                "Quizzes": null,
+                "Progress": 0.0,
+                "Id": 40
+              }
+            ],
+            "Id": 17
+          },
+          {
+            "SubTrackId": 10,
+            "Name": "Launch",
+            "Color": "#3498db",
+            "OrderIndicator": 6,
+            "Lessons": [],
+            "Id": 19
+          }
+        ],
+        "MigrationVersion": 1,
+        "ProductTemplateId": 18,
+        "Locked": false,
+        "Id": 10
+      },
+      "Name": "Power Up",
+      "Color": "#2ecc71",
+      "OrderIndicator": 3,
+      "Lessons": [],
+      "Id": 18
+    },
+    {
+      "SubTrackId": 10,
+      "SubTrack": {
+        "Level": 1,
+        "TrackId": 4,
+        "Track": null,
+        "Name": "Ready",
+        "Modules": [
+          {
+            "SubTrackId": 10,
+            "Name": "Kickstart",
+            "Color": "#1abc9c",
+            "OrderIndicator": 0,
+            "Lessons": [
+              {
+                "ModuleId": 17,
+                "Name": "Python",
+                "Content": "<h1 id=\"python\">Python</h1>\n<p>Python is a \"high-level\" programming language and its core design philosophy is all about code readability and a syntax which allows programmers to express concepts in a few lines of code” created by Guido van Rossum.</p>\n<p>In this course we will use an online code editor so no installation required.</p>\n<h2 id=\"hello-world\">Hello World</h2>\n<p>In our academy page, switch to code view and type</p>\n<pre><code class=\"language-python\">print(\"Hello Python!\")\n</code></pre>\n<p><a href=\"https://repl.it/@mokhleselheni/HelloPython?lite=true\">https://repl.it/@mokhleselheni/HelloPython?lite=true</a></p>\n",
+                "SandboxUrl": "",
+                "OrderIndicator": 0,
+                "Slides": [
+                  {
+                    "LessonId": 40,
+                    "Name": "Variables",
+                    "Content": "<h3 id=\"variables\">Variables</h3>\n<p>You can think about variables as a box that stores a value. Simple as that.</p>\n<pre><code class=\"language-python\"># booleans\ntrue_boolean = True # T (uppercase) not t!\nfalse_boolean = False # F not f!\n\n# string\nmy_name = \"Leandro Tk\"\n\n# float\nbook_price = 15.80\n</code></pre>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 0,
+                    "IsRead": null,
+                    "Id": 214
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Conditions",
+                    "Content": "<h3 id=\"control-flow-conditional-statements\">Control Flow: conditional statements</h3>\n<p>If a condition is True do something otherwise do another thing else.</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelse:\n  print(\"1 is not greater than 2\")\n</code></pre>\n<p>You can also use “elif” statement. Like that:</p>\n<pre><code class=\"language-python\">if 1 &gt; 2:\n  print(\"1 is greater than 2\")\nelif 2 &gt; 1:\n  print(\"1 is not greater than 2\")\nelse:\n  print(\"1 is equal to 2\")\n</code></pre>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 3,
+                    "IsRead": null,
+                    "Id": 215
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Looping",
+                    "Content": "<p>Execute n lines of code until the condition turn to False</p>\n<pre><code class=\"language-python\">num = 1\n\nwhile num &lt;= 10:\n  print(num)\n  num += 1\n</code></pre>\n<p>For each element of a list do something</p>\n<pre><code class=\"language-python\">for i in range(1, 11):\n  print(i)\n</code></pre>\n<ul>\n<li>range is a function that return a list from the first arg to 2nd (the 2nd not included).</li>\n</ul>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Ask the user to enter two integers (x and y) both should be greater than 0.\nPrint which integer is bigger x or y.</p>\n",
+                    "SandboxUrl": "https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true",
+                    "OrderIndicator": 6,
+                    "IsRead": null,
+                    "Id": 216
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Lists",
+                    "Content": "<h3 id=\"list-collection-array\">List: Collection | Array</h3>\n<pre><code class=\"language-python\">my_integers = [5, 7, 3, 4, 4]\n</code></pre>\n<p>To take an element of the array and manipulate it we use indexes like this</p>\n<pre><code class=\"language-python\">print(my_integers[0]) # 5\nprint(my_integers[1] + my_integers[4]) # 7 + 4 = 11\n</code></pre>\n<p>To add an element to our list we use append()</p>\n<pre><code class=\"language-python\">bookshelf = []\nbookshelf.append(\"The Effective Engineer\")\nbookshelf.append(\"The 4 Hour Work Week\")\nprint(bookshelf[0]) # The Effective Engineer\nprint(bookshelf[1]) # The 4 Hour Work Week\n</code></pre>\n<h3 id=\"tuples\">Tuples</h3>\n<p>Lists that cannot be changed, just another thing () in place of [].</p>\n<pre><code class=\"language-python\">  a = (1, 2, \"string\", [])\n  print(a[2])\n</code></pre>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 9,
+                    "IsRead": null,
+                    "Id": 217
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Dicts",
+                    "Content": "<h3 id=\"dictionary-key-value-data-structure\">Dictionary: Key-Value Data Structure</h3>\n<pre><code class=\"language-python\">dictionary_example = {\n  \"key1\": \"value1\",\n  \"key2\": \"value2\",\n  \"key3\": \"value3\"\n}\n</code></pre>\n<p>Now we manipulate an element of our Dictionary using its key:</p>\n<pre><code class=\"language-Python\">print(\"My name is %s\" %(dictionary_tk[\"name\"])) # My name is Leandro\n</code></pre>\n<h3 id=\"looping-a-dictionary\">Looping a Dictionary</h3>\n<pre><code class=\"language-python\">for key, value in dictionary.items():\n    print(\"%s --&gt; %s\" %(key, value))\n</code></pre>\n<h3 id=\"exercise\">Exercise:</h3>\n<p>Create a French to English Translator.</p>\n<p><a href=\"https://repl.it/@mokhleselheni/DictFrToEn?lite=true\">https://repl.it/@mokhleselheni/DictFrToEn?lite=true</a></p>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 12,
+                    "IsRead": null,
+                    "Id": 218
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Function and Classes",
+                    "Content": "<h3 id=\"functions\">Functions</h3>\n<pre><code class=\"language-python\">def sum_of_2(arg1, arg2):\n  result = arg1 * arg2\n  return result\n\nres = sum_of_2(2, 3)\nprint(res)\n</code></pre>\n<h3 id=\"oop\">OOP</h3>\n<pre><code class=\"language-python\">class Vehicle:\n  def __init__(self, number_of_wheels, type_of_tank, seating_capacity, maximum_velocity):\n    self.number_of_wheels = number_of_wheels\n    self.type_of_tank = type_of_tank\n    self.seating_capacity = seating_capacity\n    self.maximum_velocity = maximum_velocity\n\n  def number_of_wheels(self):\n    return self.number_of_wheels\n\n  def set_number_of_wheels(self, number):\n    self.number_of_wheels = number\n\n  def make_noise(self):\n    print('VRUUUUUUUM')\n</code></pre>\n<p>Using this class</p>\n<pre><code class=\"language-python\">tesla_model_s = Vehicle(4, 'electric', 5, 250)\ntesla_model_s.make_noise() # VRUUUUUUUM\n</code></pre>\n<h3 id=\"exercise\">Exercise</h3>\n<p>Write a student class (Name, Mark) with one method which return if the student pass/fail the test (mark &gt;=? 10)</p>\n<p><a href=\"https://repl.it/@mokhleselheni/Student?lite=true\">https://repl.it/@mokhleselheni/Student?lite=true</a></p>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 15,
+                    "IsRead": null,
+                    "Id": 219
+                  },
+                  {
+                    "LessonId": 40,
+                    "Name": "Mini Project",
+                    "Content": "<h1 id=\"your-work\">Your work</h1>\n<p>Complete the code to make a simple AI that can play with the user the game of Tic Tac Toe.</p>\n",
+                    "SandboxUrl": "",
+                    "OrderIndicator": 18,
+                    "IsRead": null,
+                    "Id": 220
+                  }
+                ],
+                "Quizzes": null,
+                "Progress": 0.0,
+                "Id": 40
+              }
+            ],
+            "Id": 17
+          },
+          {
+            "SubTrackId": 10,
+            "Name": "Power Up",
+            "Color": "#2ecc71",
+            "OrderIndicator": 3,
+            "Lessons": [],
+            "Id": 18
+          }
+        ],
+        "MigrationVersion": 1,
+        "ProductTemplateId": 18,
+        "Locked": false,
+        "Id": 10
+      },
+      "Name": "Launch",
+      "Color": "#3498db",
+      "OrderIndicator": 6,
+      "Lessons": [],
+      "Id": 19
+    }
+  ],
+  "Quizzes": [],
+  "Questions": [],
+  "Choices": []
+}
