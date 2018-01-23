@@ -67,5 +67,6 @@
    },
    "Backup":true,
    "BackupOldMap":true,
-   "MigrationVersion":1
+   "MigrationVersion":2,
+   "Emails": [ "arsslens021@gmail.com" ]
 }
