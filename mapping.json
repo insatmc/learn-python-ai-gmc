@@ -89,6 +89,102 @@
             "Quizzes":[
 
             ]
+         },
+         {
+            "Name":"AI fundamentals",
+            "SandboxUrl":"",
+            "Path":"2.ai/2.1.turing.md",
+            "Module":"Power Up",
+            "Slides":[
+               {
+                  "Name":"Goals of AI",
+                  "Path":"2.ai/2.2.ai_goals.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"AI Agent",
+                  "Path":"2.ai/2.3.agent.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Goal-based agents",
+                  "Path":"2.ai/2.4.agent_goals.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Modeling",
+                  "Path":"2.ai/2.5.modeling.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Solving problem by searching",
+                  "Path":"2.ai/2.6.solving_searching.md",
+                  "SandboxUrl":""
+               }
+            ],
+            "Quizzes":[
+
+            ]
+         },{
+            "Name":"ML fundamentals",
+            "SandboxUrl":"",
+            "Path":"3.ml/3.1.intro.md",
+            "Module":"Power Up",
+            "Slides":[
+               {
+                  "Name":"Features Engineering",
+                  "Path":"3.ml/3.2.feature_engineering.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"K-means",
+                  "Path":"3.ml/3.3.kmeans.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"KNN",
+                  "Path":"3.ml/3.4.knn.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"LEARNING DECISION TREES",
+                  "Path":"3.ml/3.5.dtrees.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Regression",
+                  "Path":"3.ml/3.6.regression.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Support Vector Machine",
+                  "Path":"3.ml/3.7.svm.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Neural Networks",
+                  "Path":"3.ml/3.8.nn.md",
+                  "SandboxUrl":""
+               },{
+                  "Name":"Mini Project",
+                  "Path":"3.ml/3.9.mini_project.md",
+                  "SandboxUrl":""
+               }
+            ],
+            "Quizzes":[
+
+            ]
+         },{
+            "Name":"Extras",
+            "SandboxUrl":"",
+            "Path":"empty.md",
+            "Module":"Launch",
+            "Slides":[
+               {
+                  "Name":"NLP",
+                  "Path":"4.extras/4.1.nlp.md",
+                  "SandboxUrl":""
+               },
+               {
+                  "Name":"Objects Detection",
+                  "Path":"4.extras/4.2.odetection.md",
+                  "SandboxUrl":""
+               }
+            ],
+            "Quizzes":[
+
+            ]
          }
       ],
       "Modules":[
@@ -115,5 +211,5 @@
       "arsslens021@gmail.com",
       "elhenimokhles@gmail.com"
    ],
-   "MigrationVersion":2
+   "MigrationVersion":8
 }
