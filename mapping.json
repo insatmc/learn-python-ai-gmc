@@ -5,7 +5,7 @@
    
    "Import":{
       "SubTrackId":10,
-      "Strategy":0,
+      "Strategy":1,
       "Lessons":[
         {
            "Name":"Python",
