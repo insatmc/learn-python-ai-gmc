@@ -2,10 +2,9 @@
    "SupportedContentExtensions":[
       ".md"
    ],
-   
    "Import":{
       "SubTrackId":10,
-      "Strategy":1,
+      "Strategy":0,
       "Lessons":[
         {
            "Name":"Python",
