@@ -84,10 +84,14 @@
          {
             "Name":"AI fundamentals",
             "SandboxUrl":"",
-            "Path":"2.ai/2.1.turing.md",
+            "Path":"2.ai/2.0.intro.md",
             "Module":"Power Up",
             "Slides":[
                {
+                  "Name":"Turing",
+                  "Path":"2.ai/2.1.turing.md",
+                  "SandboxUrl":""
+               },{
                   "Name":"Goals of AI",
                   "Path":"2.ai/2.2.ai_goals.md",
                   "SandboxUrl":""
@@ -211,5 +215,5 @@
       "arsslens021@gmail.com",
       "elhenimokhles@gmail.com"
    ],
-   "MigrationVersion":9
+   "MigrationVersion":10
 }
