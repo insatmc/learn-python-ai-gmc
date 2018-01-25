@@ -6,81 +6,72 @@
       "SubTrackId":10,
       "Strategy":0,
       "Lessons":[
-         {
-            "Id":63,
-            "Name":"Python",
-            "SandboxUrl":"",
-            "Path":"0.python/0.1.intro.md",
-            "Module":"Kickstart",
-            "Slides":[
-               {
-                  "Id":312,
-                  "Name":"Variables",
-                  "Path":"0.python/0.2.variables.md",
-                  "SandboxUrl":""
-               },
-               {
-                  "Id":313,
-                  "Name":"Conditions",
-                  "Path":"0.python/0.3.conditions.md",
-                  "SandboxUrl":""
-               },
-               {
-                  "Id":314,
-                  "Name":"Looping",
-                  "Path":"0.python/0.4.looping.md",
-                  "SandboxUrl":"https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true"
-               },
-               {
-                  "Id":315,
-                  "Name":"Lists",
-                  "Path":"0.python/0.5.lists.md",
-                  "SandboxUrl":""
-               },
-               {
-                  "Id":316,
-                  "Name":"Dicts",
-                  "Path":"0.python/0.6.dicts.md",
-                  "SandboxUrl":""
-               },
-               {
-                  "Id":317,
-                  "Name":"Function and Classes",
-                  "Path":"0.python/0.7.func_oop.md",
-                  "SandboxUrl":""
-               },
-               {
-                  "Id":318,
-                  "Name":"Mini Project",
-                  "Path":"0.python/0.8.project.md",
-                  "SandboxUrl":""
-               }
-            ],
-            "Quizzes":[
+        {
+           "Name":"Python",
+           "SandboxUrl":"",
+           "Path":"empty.md",
+           "Module":"Kickstart",
+           "Slides":[
+             {
+                "Name":"Hello Python",
+                "Path":"0.python/0.1.intro.md",
+                "SandboxUrl":"https://repl.it/@mokhleselheni/HelloPython?lite=true"
+             }, {
+                 "Name":"Variables",
+                 "Path":"0.python/0.2.variables.md",
+                 "SandboxUrl":""
+              },
+              {
+                 "Name":"Conditions",
+                 "Path":"0.python/0.3.conditions.md",
+                 "SandboxUrl":""
+              },
+              {
+                 "Name":"Looping",
+                 "Path":"0.python/0.4.looping.md",
+                 "SandboxUrl":"https://repl.it/@mokhleselheni/WhichIntegerIsBigger?lite=true"
+              },
+              {
+                 "Name":"Lists",
+                 "Path":"0.python/0.5.lists.md",
+                 "SandboxUrl":""
+              },
+              {
+                 "Name":"Dicts",
+                 "Path":"0.python/0.6.dicts.md",
+                 "SandboxUrl":"https://repl.it/@mokhleselheni/DictFrToEn?lite=true"
+              },
+              {
+                 "Name":"Function and Classes",
+                 "Path":"0.python/0.7.func_oop.md",
+                 "SandboxUrl":"https://repl.it/@mokhleselheni/Student?lite=true"
+              },
+              {
+                 "Name":"Mini Project",
+                 "Path":"0.python/0.8.project.md",
+                 "SandboxUrl":"https://repl.it/@mokhleselheni/HelloPython?lite=true"
+              }
+           ],
+           "Quizzes":[
 
-            ]
-         },
-         {
-            "Id":64,
+           ]
+        }, {
             "Name":"Numpy",
             "SandboxUrl":"",
             "Path":"1.numpy/1.1.numpy.md",
             "Module":"Kickstart",
             "Slides":[
                {
-                  "Id":319,
                   "Name":"Arrays",
                   "Path":"1.numpy/1.2.arrays.md",
                   "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
                },
                {
-                  "Id":320,
                   "Name":"Math",
                   "Path":"1.numpy/1.3.math.md",
                   "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
                },
                {
-                  "Id":321,
                   "Name":"Indexing",
                   "Path":"1.numpy/1.4.indexing.md",
                   "SandboxUrl":"https://repl.it/@mokhleselheni/Numpy"
@@ -100,19 +91,23 @@
                   "Name":"Goals of AI",
                   "Path":"2.ai/2.2.ai_goals.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"AI Agent",
                   "Path":"2.ai/2.3.agent.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Goal-based agents",
                   "Path":"2.ai/2.4.agent_goals.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Modeling",
                   "Path":"2.ai/2.5.modeling.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Solving problem by searching",
                   "Path":"2.ai/2.6.solving_searching.md",
                   "SandboxUrl":""
@@ -121,7 +116,8 @@
             "Quizzes":[
 
             ]
-         },{
+         },
+         {
             "Name":"ML fundamentals",
             "SandboxUrl":"",
             "Path":"3.ml/3.1.intro.md",
@@ -136,27 +132,33 @@
                   "Name":"K-means",
                   "Path":"3.ml/3.3.kmeans.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"KNN",
                   "Path":"3.ml/3.4.knn.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"LEARNING DECISION TREES",
                   "Path":"3.ml/3.5.dtrees.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Regression",
                   "Path":"3.ml/3.6.regression.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Support Vector Machine",
                   "Path":"3.ml/3.7.svm.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Neural Networks",
                   "Path":"3.ml/3.8.nn.md",
                   "SandboxUrl":""
-               },{
+               },
+               {
                   "Name":"Mini Project",
                   "Path":"3.ml/3.9.mini_project.md",
                   "SandboxUrl":""
@@ -165,7 +167,8 @@
             "Quizzes":[
 
             ]
-         },{
+         },
+         {
             "Name":"Extras",
             "SandboxUrl":"",
             "Path":"empty.md",
@@ -189,17 +192,14 @@
       ],
       "Modules":[
          {
-            "Id":27,
             "Name":"Kickstart",
             "Color":"#1abc9c"
          },
          {
-            "Id":28,
             "Name":"Power Up",
             "Color":"#2ecc71"
          },
          {
-            "Id":29,
             "Name":"Launch",
             "Color":"#3498db"
          }
@@ -211,5 +211,6 @@
       "arsslens021@gmail.com",
       "elhenimokhles@gmail.com"
    ],
-   "MigrationVersion":8
+   "MigrationVersion":9
 }
+

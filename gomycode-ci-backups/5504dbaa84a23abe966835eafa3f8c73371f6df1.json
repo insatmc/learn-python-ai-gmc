@@ -1,0 +1,120 @@
+{
+  "Lessons": [],
+  "Slides": [],
+  "Modules": [
+    {
+      "SubTrackId": 10,
+      "SubTrack": {
+        "Level": 1,
+        "TrackId": 4,
+        "Track": null,
+        "Name": "Ready",
+        "Modules": [
+          {
+            "SubTrackId": 10,
+            "Name": "Power Up",
+            "Color": "#2ecc71",
+            "OrderIndicator": 3,
+            "Lessons": [],
+            "Id": 35
+          },
+          {
+            "SubTrackId": 10,
+            "Name": "Launch",
+            "Color": "#3498db",
+            "OrderIndicator": 6,
+            "Lessons": [],
+            "Id": 36
+          }
+        ],
+        "MigrationVersion": 5,
+        "ProductTemplateId": 18,
+        "Locked": false,
+        "Progress": 0.0,
+        "Id": 10
+      },
+      "Name": "Kickstart",
+      "Color": "#1abc9c",
+      "OrderIndicator": 0,
+      "Lessons": [],
+      "Id": 34
+    },
+    {
+      "SubTrackId": 10,
+      "SubTrack": {
+        "Level": 1,
+        "TrackId": 4,
+        "Track": null,
+        "Name": "Ready",
+        "Modules": [
+          {
+            "SubTrackId": 10,
+            "Name": "Kickstart",
+            "Color": "#1abc9c",
+            "OrderIndicator": 0,
+            "Lessons": [],
+            "Id": 34
+          },
+          {
+            "SubTrackId": 10,
+            "Name": "Launch",
+            "Color": "#3498db",
+            "OrderIndicator": 6,
+            "Lessons": [],
+            "Id": 36
+          }
+        ],
+        "MigrationVersion": 5,
+        "ProductTemplateId": 18,
+        "Locked": false,
+        "Progress": 0.0,
+        "Id": 10
+      },
+      "Name": "Power Up",
+      "Color": "#2ecc71",
+      "OrderIndicator": 3,
+      "Lessons": [],
+      "Id": 35
+    },
+    {
+      "SubTrackId": 10,
+      "SubTrack": {
+        "Level": 1,
+        "TrackId": 4,
+        "Track": null,
+        "Name": "Ready",
+        "Modules": [
+          {
+            "SubTrackId": 10,
+            "Name": "Kickstart",
+            "Color": "#1abc9c",
+            "OrderIndicator": 0,
+            "Lessons": [],
+            "Id": 34
+          },
+          {
+            "SubTrackId": 10,
+            "Name": "Power Up",
+            "Color": "#2ecc71",
+            "OrderIndicator": 3,
+            "Lessons": [],
+            "Id": 35
+          }
+        ],
+        "MigrationVersion": 5,
+        "ProductTemplateId": 18,
+        "Locked": false,
+        "Progress": 0.0,
+        "Id": 10
+      },
+      "Name": "Launch",
+      "Color": "#3498db",
+      "OrderIndicator": 6,
+      "Lessons": [],
+      "Id": 36
+    }
+  ],
+  "Quizzes": [],
+  "Questions": [],
+  "Choices": []
+}
